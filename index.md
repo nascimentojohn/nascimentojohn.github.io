@@ -12,12 +12,10 @@
 <img src="profilephoto.jpg" alt="Profile Photo" style="border-radius: 50%; width: 150px; height: 150px;">
 
 ## About Me
-I am Johnnatan Nascimento, a professor and doctoral student...
+[About Me](about.md)
 
 ## Education
-- Bachelor's Degree in Computer Science, University X (Year)
-- Master's Degree in Information Technology, University Y (Year)
+[Education](education.md)
 
 ## Professional Experience
-- Professor at Cégep Z (Year - Present)
-- Research Assistant at University Z (Year - Year)
+[Experience](experience.md)
