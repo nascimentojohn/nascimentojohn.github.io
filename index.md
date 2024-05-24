@@ -1,5 +1,5 @@
 # Welcome to My Website!
-
+![Profile Photo](profilephoto.jpg)
 ## About Me
 I am Johnnatan Nascimento, a professor and doctoral student...
 
