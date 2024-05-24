@@ -1,5 +1,7 @@
 # Welcome to My Website!
-![Profile Photo](profilephoto.jpg)
+<!-- Add style attribute to apply rounded border -->
+<img src="profilephoto.jpg" alt="Profile Photo" style="border-radius: 50%; width: 150px; height: 150px;">
+
 ## About Me
 I am Johnnatan Nascimento, a professor and doctoral student...
 
