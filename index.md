@@ -1,4 +1,8 @@
-# Welcome to My Website!
+<!-- Add a div to contain the title and apply CSS for centering -->
+<div style="text-align: center;">
+  <h1>Johnnatan Nascimento</h1>
+</div>
+
 <!-- Add style attribute to apply rounded border -->
 <img src="profilephoto.jpg" alt="Profile Photo" style="border-radius: 50%; width: 150px; height: 150px;">
 
