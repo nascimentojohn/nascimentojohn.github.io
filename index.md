@@ -8,14 +8,17 @@
 
   <!-- Add the main content on the left -->
   <div>
-<!-- Add style attribute to apply rounded border -->
-<img src="profilephoto.jpg" alt="Profile Photo" style="border-radius: 50%; width: 150px; height: 150px;">
+    <!-- Add style attribute to apply rounded border -->
+    <img src="profilephoto.jpg" alt="Profile Photo" style="border-radius: 50%; width: 150px; height: 150px;">
 
-## About Me
-[About Me](about.md)
+    ## About Me
+    [About Me](about.md)
 
-## Education
-[Education](education.md)
+    ## Education
+    [Education](education.md)
 
-## Professional Experience
-[Experience](experience.md)
+    ## Professional Experience
+    [Experience](experience.md)
+  </div>
+
+</div>
