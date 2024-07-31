@@ -11,9 +11,8 @@ title: "Johnnatan Nascimento"
 <nav>
   <ul>
     <li><a href="index.md">Home</a></li>
-    <li><a href="about.md">About Me</a></li>
-    <li><a href="education.md">Education</a></li>
-    <li><a href="experience.md">Professional Experience</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="experience.html">Professional Experience</a></li>
   </ul>
 </nav>
 
