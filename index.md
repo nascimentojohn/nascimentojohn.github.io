@@ -3,8 +3,18 @@
   <h1>Johnnatan Nascimento</h1>
 </div>
 
+<!-- Navigation bar -->
+<nav style="text-align: center; margin-top: 20px;">
+  <ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; margin-right: 15px;"><a href="index.md">Home</a></li>
+    <li style="display: inline; margin-right: 15px;"><a href="about.md">About Me</a></li>
+    <li style="display: inline; margin-right: 15px;"><a href="education.md">Education</a></li>
+    <li style="display: inline; margin-right: 15px;"><a href="experience.md">Professional Experience</a></li>
+  </ul>
+</nav>
+
 <!-- Use a wrapper div to position the photo and text -->
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: center; margin-top: 30px;">
 
   <!-- Add the main content on the left -->
   <div>
