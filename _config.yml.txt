@@ -1,0 +1,6 @@
+title: "Johnnatan Nascimento"
+description: "Personal website of Johnnatan Nascimento"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://nascimentojohn.github.io/# your GitHub Pages URL
+theme: minima
+markdown: kramdown
