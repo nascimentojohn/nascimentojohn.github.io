@@ -12,16 +12,16 @@
     <img src="profilephoto.jpg" alt="Profile Photo" style="border-radius: 50%; width: 150px; height: 150px;">
   </div>
 
+  <!-- Use another div for the text content -->
   <div style="margin-left: 20px;">
-    <!-- Markdown headers and links -->
-    ## About Me
-    [About Me](about.md)
+    <h2>About Me</h2>
+    <p><a href="about.md">About Me</a></p>
 
-    ## Education
-    [Education](education.md)
+    <h2>Education</h2>
+    <p><a href="education.md">Education</a></p>
 
-    ## Professional Experience
-    [Experience](experience.md)
+    <h2>Professional Experience</h2>
+    <p><a href="experience.md">Experience</a></p>
   </div>
 
 </div>
