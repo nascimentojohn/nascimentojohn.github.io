@@ -13,6 +13,7 @@
   </div>
 
   <div style="margin-left: 20px;">
+    <!-- Markdown headers and links -->
     ## About Me
     [About Me](about.md)
 
