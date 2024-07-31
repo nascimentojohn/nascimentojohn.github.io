@@ -8,8 +8,8 @@
 
   <!-- Add the main content on the left -->
   <div>
-    <!-- Add style attribute to apply rounded border -->
-    <img src="profilephoto.jpg" alt="Profile Photo" style="border-radius: 50%; width: 150px; height: 150px;">
+    <!-- Increase the size of the image by adjusting width and height -->
+    <img src="profilephoto.jpg" alt="Profile Photo" style="border-radius: 50%; width: 250px; height: 250px;">
   </div>
 
   <!-- Use another div for the text content -->
