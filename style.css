@@ -69,8 +69,8 @@ nav a.active {
 }
 
 .profile-photo {
-    width: 200px; /* Increased width */
-    height: 200px; /* Increased height */
+    width: 250px; /* Updated size */
+    height: 250px; /* Updated size */
     border-radius: 50%;
     margin-right: 20px;
     flex-shrink: 0;
@@ -78,7 +78,7 @@ nav a.active {
 }
 
 .about-text {
-    max-width: 600px;
+    max-width: calc(100% - 270px); /* Adjust width to account for photo and margin */
     text-align: left;
     line-height: 1.6;
     flex-grow: 1;
@@ -114,7 +114,7 @@ nav a.active {
 
 @media (max-width: 768px) {
     .about-section {
-        flex-direction: column;
+        flex-direction: column; /* Stack for small screens */
         text-align: center;
     }
 
@@ -123,6 +123,10 @@ nav a.active {
         margin-right: 0;
         width: 150px; /* Adjust size for mobile */
         height: 150px;
+    }
+
+    .about-text {
+        max-width: 100%; /* Full width for small screens */
     }
 
     nav a {
