@@ -139,3 +139,22 @@ nav a:hover {
 @media (max-width: 768px) {
     .about-section, .education-section, .experience-section {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+        margin-right: 0;
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-text, .education-section, .experience-section {
+        max-width: 100%;
+    }
+
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
