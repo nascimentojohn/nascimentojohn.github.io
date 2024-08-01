@@ -52,6 +52,20 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
 }
+.content-section {
+    display: none; /* Hide all sections by default */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.active-section {
+    display: flex; /* Show active section */
+    flex-direction: column;
+    align-items: center;
+}
 
 .about-section, .education-section, .experience-section {
     display: flex;
