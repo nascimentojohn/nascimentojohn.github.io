@@ -52,7 +52,7 @@ nav a:hover {
     align-items: center;
 }
 
-.about-section {
+.about-section, .education-section, .experience-section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -60,22 +60,52 @@ nav a:hover {
     padding: 20px;
     max-width: 800px;
     animation: fadeIn 1s ease-in-out;
+    margin-bottom: 40px;
 }
 
 .profile-photo {
-    width: 200px; /* Larger width */
-    height: 200px; /* Larger height */
+    width: 200px; /* Adjusted width */
+    height: 200px; /* Adjusted height */
     border-radius: 50%;
     margin-right: 20px;
     flex-shrink: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.about-text {
-    max-width: calc(100% - 220px); /* Adjusted width to fit text next to photo */
+.about-text, .education-section, .experience-section {
+    max-width: calc(100% - 220px); /* Adjust width to fit content next to photo */
     text-align: left;
     line-height: 1.6;
     flex-grow: 1;
+}
+
+.about-text h2, .education-section h2, .experience-section h2 {
+    font-size: 1.8em;
+    color: #2b5876;
+    margin-bottom: 10px;
+}
+
+.about-text p, .education-section ul, .experience-section ul {
+    margin-bottom: 20px;
+}
+
+.education-section ul, .experience-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.education-section li, .experience-section li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.education-section li::before, .experience-section li::before {
+    content: "• ";
+    color: #2b5876;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 .social-media {
@@ -106,26 +136,6 @@ nav a:hover {
     }
 }
 
-/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    .about-section {
-        flex-direction: column; /* Stack items vertically for small screens */
-        text-align: center;
-    }
-
-    .profile-photo {
-        margin-bottom: 20px;
-        margin-right: 0;
-        width: 150px; /* Smaller photo size for mobile */
-        height: 150px;
-    }
-
-    .about-text {
-        max-width: 100%; /* Full width for text on mobile */
-    }
-
-    nav a {
-        display: block; /* Stack navigation links for better mobile layout */
-        margin-bottom: 10px;
-    }
-}
+    .about-section, .education-section, .experience-section {
+        flex-direction: column;
