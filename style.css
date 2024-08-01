@@ -10,9 +10,10 @@ header {
     background-color: #2b5876; /* Dark blue from the photo's scarf */
     padding: 20px;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     color: white;
     margin-bottom: 10px;
+    font-family: 'Merriweather', serif; /* Apply serif font for header */
 }
 
 nav {
@@ -28,16 +29,21 @@ nav {
 }
 
 nav a {
-    color: #2b5876; /* Dark blue for links */
+    color: #ffffff; /* White text for the navbar */
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1em;
-    transition: color 0.3s;
+    transition: color 0.3s, border-bottom 0.3s; /* Transition for smooth hover effect */
 }
 
 nav a:hover {
-    color: #4a90e2; /* Slightly lighter blue on hover */
+    color: #e0e0e0; /* Light gray on hover */
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+nav a.active {
+    border-bottom: 2px solid #e0e0e0; /* Underline active link */
 }
 
 .container {
@@ -59,6 +65,7 @@ nav a:hover {
     flex-wrap: wrap;
     padding: 20px;
     max-width: 800px;
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
 }
 
 .profile-photo {
@@ -77,6 +84,17 @@ nav a:hover {
     flex-grow: 1;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media (max-width: 768px) {
     .about-section {
         flex-direction: column;
@@ -86,9 +104,12 @@ nav a:hover {
     .profile-photo {
         margin-bottom: 20px;
         margin-right: 0;
+        width: 120px; /* Smaller photo size for mobile */
+        height: 120px;
     }
 
-    .about-text {
-        max-width: 100%;
+    nav a {
+        display: block; /* Stack nav links for mobile */
+        margin-bottom: 10px;
     }
 }
