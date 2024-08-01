@@ -47,47 +47,4 @@ nav a:hover {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    max-width: 800px;
-}
-
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-    flex-shrink: 0;
-}
-
-.about-text {
-    max-width: 600px;
-    text-align: left;
-    line-height: 1.6;
-    flex-grow: 1;
-}
-
-@media (max-width: 768px) {
-    .about-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-photo {
-        margin-bottom: 20px;
-        margin-right: 0;
-    }
-
-    .about-text {
-        max-width: 100%;
-    }
-}
+   
