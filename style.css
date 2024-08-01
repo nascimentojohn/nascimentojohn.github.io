@@ -67,7 +67,7 @@ nav a:hover {
     align-items: center;
 }
 
-.home-section, .education-section, .experience-section {
+.about-section, .education-section, .experience-section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -87,20 +87,20 @@ nav a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.home-text, .education-section, .experience-section {
+.about-text, .education-section, .experience-section {
     max-width: calc(100% - 220px); /* Adjust width to fit content next to photo */
     text-align: left;
     line-height: 1.6;
     flex-grow: 1;
 }
 
-.home-text h2, .education-section h2, .experience-section h2 {
+.about-text h2, .education-section h2, .experience-section h2 {
     font-size: 1.8em;
     color: #2b5876;
     margin-bottom: 10px;
 }
 
-.home-text p, .education-section ul, .experience-section ul {
+.about-text p, .education-section ul, .experience-section ul {
     margin-bottom: 20px;
 }
 
@@ -219,7 +219,7 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-    .home-section, .education-section, .experience-section {
+    .about-section, .education-section, .experience-section {
         flex-direction: column;
         text-align: center;
     }
@@ -231,7 +231,7 @@ nav a:hover {
         height: 150px;
     }
 
-    .home-text, .education-section, .experience-section {
+    .about-text, .education-section, .experience-section {
         max-width: 100%;
     }
 
