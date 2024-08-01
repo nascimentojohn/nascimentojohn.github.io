@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Johnnatan Nascimento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Johnnatan Nascimento</h1>
+    </header>
+    
+    <nav>
+        <!-- Update links to reflect language selection -->
+        <a href="index_fr.html" onclick="showSection('home')">Accueil</a>
+        <a href="#" onclick="showSection('cv')">CV</a>
+        <a href="#" onclick="showSection('experience')">Expérience Professionnelle</a>
+        <a href="#" onclick="showSection('blog')">Blog</a>
+        <!-- Link to switch back to English version -->
+        <a href="index.html" class="lang-switch">EN</a>
+    </nav>
+    
+    <div id="content" class="container">
+        <!-- Home Section -->
+        <section id="home" class="content-section active-section">
+            <img src="profilephoto.jpg" alt="Photo de profil de Johnnatan" class="profile-photo">
+            <div class="about-text">
+                <h2>Bienvenue sur mon site</h2>
+                <p>Bonjour! Je suis Johnnatan Nascimento, linguiste et éducateur avec un Master en linguistique de l'Université fédérale de Minas Gerais, Brésil. Je termine actuellement mon doctorat en linguistique à l'Université du Québec à Montréal. J'ai enseigné au Département des Classiques de l'Université McGill, à l'Université Bishop et au Département des Langues du Cégep de Lévis. Mon expérience d'enseignement comprend le latin, le grec ancien, le sanskrit, les cours de linguistique fondamentale et la linguistique comparative/historique.</p>
+                <p>Mes recherches portent sur la linguistique historique, notamment les langues indo-européennes comparatives, la morphologie verbale, la grammaticalisation et la nanosyntaxe. J'utilise des outils technologiques pour améliorer les résultats d'apprentissage. En dehors du milieu universitaire, je travaille à rendre la linguistique accessible à un public plus large.</p>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="content-section">
+            <h2>Curriculum Vitae</h2>
+            <ul>
+                <li><strong>Doctorat en Linguistique</strong> (cours terminés), Université du Québec à Montréal, 2016 – 2023</li>
+                <li><strong>Maîtrise en Linguistique</strong>, Université fédérale de Minas Gerais, 2016</li>
+                <li><strong>Baccalauréat en Linguistique</strong>, Université fédérale de Minas Gerais, 2013</li>
+            </ul>
+        </section>
+
+        <!-- Expérience Professionnelle Section -->
+        <section id="experience" class="content-section">
+            <h2>Expérience Professionnelle</h2>
+            <ul>
+                <li><strong>Chargé de cours</strong>, Université Bishop’s, Terminologie grecque et latine pour la médecine et les sciences de la vie (CLA170), 2024</li>
+                <li><strong>Professeur</strong>, Cégep de Lévis, Formation générale en anglais, Portugais I, II, III, depuis 2023</li>
+                <li><strong>Chargé de cours</strong>, Université McGill, Latin introductif 1 (CLAS 210), Automne 2022</li>
+                <li><strong>Assistant d'enseignement et correcteur</strong>, UQAM, divers cours, 2020-2022</li>
+            </ul>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="content-section">
+            <h2>Blog</h2>
+            <div class="blog-posts">
+                <article class="blog-post">
+                    <h3>Titre du blog 1</h3>
+                    <p><em>Posté le : Date</em></p>
+                    <p>Ceci est un bref résumé du contenu du blog. Il doit fournir un aperçu de l'article et inciter les lecteurs à cliquer pour en savoir plus.</p>
+                    <a href="blog-post-1_fr.html">Lire la suite...</a>
+                </article>
+                <article class="blog-post">
+                    <h3>Titre du blog 2</h3>
+                    <p><em>Posté le : Date</em></p>
+                    <p>Ceci est un bref résumé du contenu du blog. Il doit fournir un aperçu de l'article et inciter les lecteurs à cliquer pour en savoir plus.</p>
+                    <a href="blog-post-2_fr.html">Lire la suite...</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <a href="https://twitter.com/johnasci" target="_blank" class="social-icon" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/johnlinguista" target="_blank" class="social-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/in/johnascimento/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
