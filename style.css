@@ -1,79 +1,31 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
-}
-
-header {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-    font-size: 2em;
-    color: #4A90E2;
-}
-
-nav {
-    position: -webkit-sticky; /* For Safari */
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav a {
-    color: #4A90E2;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.about-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.about-text {
-    max-width: 600px;
-}
-
-@media (max-width: 768px) {
-    .about-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .profile-photo {
-        margin-bottom: 20px;
-    }
-
-    .about-text {
-        max-width: 100%;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnnatan Nascimento's Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Johnnatan Nascimento</h1>
+    </header>
+    
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Professional Experience</a>
+    </nav>
+    
+    <div class="container">
+        <div class="about-section" id="about">
+            <img src="profilephoto.jpg" alt="Johnnatan's Profile Photo" class="profile-photo">
+            <div class="about-text">
+                <p>Hi! I’m Johnnatan Nascimento, a linguist and educator with a Master's degree in Linguistics from the Federal University of Minas Gerais, Brazil. I am currently completing my PhD in Linguistics at the Université du Québec à Montréal. I have taught at the Classics Department of McGill University, Bishop's University, and the Languages Department of Cégep de Lévis. My teaching experience includes Latin, Ancient Greek, Sanskrit, fundamental linguistics courses, and comparative/historical linguistics.</p>
+                <p>My research focuses on historical linguistics, specifically comparative Indo-European languages, verbal morphology, grammaticalization, and nanosyntax. I use technological tools to improve learning outcomes. Beyond academia, I work to make linguistics accessible to broader audiences.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
