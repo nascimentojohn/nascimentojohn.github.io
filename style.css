@@ -69,8 +69,8 @@ nav a.active {
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
     border-radius: 50%;
     margin-right: 20px;
     flex-shrink: 0;
@@ -82,6 +82,23 @@ nav a.active {
     text-align: left;
     line-height: 1.6;
     flex-grow: 1;
+}
+
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #2b5876; /* Dark blue color for icons */
+    font-size: 2em;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-icon:hover {
+    color: #0077cc; /* Change color on hover */
 }
 
 @keyframes fadeIn {
@@ -104,8 +121,8 @@ nav a.active {
     .profile-photo {
         margin-bottom: 20px;
         margin-right: 0;
-        width: 120px; /* Smaller photo size for mobile */
-        height: 120px;
+        width: 150px; /* Adjust size for mobile */
+        height: 150px;
     }
 
     nav a {
