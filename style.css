@@ -2,22 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f7fa; /* Light gray/blue background */
+    background-color: #f4f7fa;
     color: #333;
 }
 
 header {
-    background-color: #2b5876; /* Dark blue from the photo's scarf */
+    background-color: #2b5876;
     padding: 20px;
     text-align: center;
     font-size: 2.5em;
     color: white;
     margin-bottom: 10px;
-    font-family: 'Merriweather', serif; /* Apply serif font for header */
+    font-family: 'Merriweather', serif;
 }
 
 nav {
-    position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
     background-color: #ffffff;
@@ -29,21 +28,16 @@ nav {
 }
 
 nav a {
-    color: #2b5876; /* Dark blue text for the navbar */
+    color: #2b5876;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1em;
-    transition: color 0.3s, border-bottom 0.3s; /* Transition for smooth hover effect */
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #e0e0e0; /* Light gray on hover */
-    text-decoration: underline; /* Underline effect on hover */
-}
-
-nav a.active {
-    border-bottom: 2px solid #e0e0e0; /* Underline active link */
+    color: #0077cc;
 }
 
 .container {
@@ -65,12 +59,12 @@ nav a.active {
     flex-wrap: wrap;
     padding: 20px;
     max-width: 800px;
-    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+    animation: fadeIn 1s ease-in-out;
 }
 
 .profile-photo {
-    width: 250px; /* Updated size */
-    height: 250px; /* Updated size */
+    width: 200px; /* Larger width */
+    height: 200px; /* Larger height */
     border-radius: 50%;
     margin-right: 20px;
     flex-shrink: 0;
@@ -78,7 +72,7 @@ nav a.active {
 }
 
 .about-text {
-    max-width: calc(100% - 270px); /* Adjust width to account for photo and margin */
+    max-width: calc(100% - 220px); /* Adjusted width to fit text next to photo */
     text-align: left;
     line-height: 1.6;
     flex-grow: 1;
@@ -92,13 +86,13 @@ nav a.active {
 
 .social-icon {
     margin: 0 10px;
-    color: #2b5876; /* Dark blue color for icons */
+    color: #2b5876;
     font-size: 2em;
-    transition: color 0.3s; /* Smooth color transition */
+    transition: color 0.3s;
 }
 
 .social-icon:hover {
-    color: #0077cc; /* Change color on hover */
+    color: #0077cc;
 }
 
 @keyframes fadeIn {
@@ -112,25 +106,26 @@ nav a.active {
     }
 }
 
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .about-section {
-        flex-direction: column; /* Stack for small screens */
+        flex-direction: column; /* Stack items vertically for small screens */
         text-align: center;
     }
 
     .profile-photo {
         margin-bottom: 20px;
         margin-right: 0;
-        width: 150px; /* Adjust size for mobile */
+        width: 150px; /* Smaller photo size for mobile */
         height: 150px;
     }
 
     .about-text {
-        max-width: 100%; /* Full width for small screens */
+        max-width: 100%; /* Full width for text on mobile */
     }
 
     nav a {
-        display: block; /* Stack nav links for mobile */
+        display: block; /* Stack navigation links for better mobile layout */
         margin-bottom: 10px;
     }
 }
