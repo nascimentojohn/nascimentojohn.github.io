@@ -10,5 +10,5 @@ function showSection(sectionId) {
 
 // Show the "Home" section by default when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-    showSection('home'); // Change 'about' to 'home'
+    showSection('home'); // Ensure 'home' is the default active section
 });
