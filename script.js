@@ -8,7 +8,7 @@ function showSection(sectionId) {
     activeSection.classList.add('active-section');
 }
 
-// Show the "About Me" section by default when the page loads
+// Show the "Home" section by default when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-    showSection('about');
+    showSection('home'); // Change 'about' to 'home'
 });
