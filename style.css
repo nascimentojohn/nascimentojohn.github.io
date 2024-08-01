@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f4f7fa; /* Light gray/blue background */
     color: #333;
 }
 
 header {
-    background-color: #4A90E2;
+    background-color: #2b5876; /* Dark blue from the photo's scarf */
     padding: 20px;
     text-align: center;
     font-size: 2em;
@@ -28,7 +28,7 @@ nav {
 }
 
 nav a {
-    color: #4A90E2;
+    color: #2b5876; /* Dark blue for links */
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #0077cc;
+    color: #4a90e2; /* Slightly lighter blue on hover */
 }
 
 .container {
@@ -47,4 +47,48 @@ nav a:hover {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+}
