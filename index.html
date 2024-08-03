@@ -5,60 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johnnatan Nascimento - Linguist and Educator</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Johnnatan Nascimento</h1>
-        <nav>
-            <a href="#" onclick="showSection('home')">Home</a>
-            <a href="#" onclick="showSection('about')">About Me</a>
-            <a href="#" onclick="showSection('education')">Education</a>
-            <a href="#" onclick="showSection('experience')">Professional Experience</a>
-        </nav>
+        <div class="header-content">
+            <h1>Johnnatan Nascimento</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Professional Experience</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="container">
-        <section id="home" class="content-section active-section">
-            <img src="profilephoto.jpg" alt="Johnnatan Nascimento" class="profile-photo">
-            <div class="about-text">
-                <h2>Hi! I'm Johnnatan Nascimento</h2>
-                <p>A linguist and educator with a passion for historical linguistics and language teaching.</p>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <img src="profilephoto.jpg" alt="Johnnatan Nascimento" class="profile-photo">
+                <div class="hero-content">
+                    <h2>Hi! I'm Johnnatan Nascimento</h2>
+                    <p>A linguist and educator with a passion for historical linguistics and language teaching.</p>
+                    <a href="#about" class="cta-button">Learn More About Me</a>
+                </div>
             </div>
         </section>
 
         <section id="about" class="content-section">
-            <h2>About Me</h2>
-            <p>I'm a linguist and educator with a Master's degree in Linguistics from the Federal University of Minas Gerais, Brazil. Currently, I'm completing my PhD in Linguistics at the Université du Québec à Montréal, Canada.</p>
-            <p>My teaching experience includes Latin, Ancient Greek, Sanskrit, fundamental linguistics courses, and comparative/historical linguistics at institutions such as McGill University, Bishop's University, and Cégep de Lévis.</p>
-            <p>My research focuses on historical linguistics, specifically comparative Indo-European languages, verbal morphology, grammaticalization, and nanosyntax. I use technological tools to improve learning outcomes and work to make linguistics accessible to broader audiences.</p>
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I'm a dedicated linguist and educator with a Master's degree in Linguistics from the Federal University of Minas Gerais, Brazil. Currently, I'm completing my PhD in Linguistics at the Université du Québec à Montréal, Canada.</p>
+                <p>My teaching experience spans various prestigious institutions, including McGill University, Bishop's University, and Cégep de Lévis. I specialize in Latin, Ancient Greek, Sanskrit, fundamental linguistics courses, and comparative/historical linguistics.</p>
+                <p>My research focuses on historical linguistics, specifically comparative Indo-European languages, verbal morphology, grammaticalization, and nanosyntax. I'm passionate about using technological tools to enhance learning outcomes and making linguistics accessible to broader audiences.</p>
+            </div>
         </section>
 
         <section id="education" class="content-section">
-            <h2>Education</h2>
-            <ul>
-                <li>Doctorate in Linguistics (coursework completed), Université du Québec à Montréal, 2016 - 2023</li>
-                <li>Master's in Linguistics, Federal University of Minas Gerais, 2016</li>
-                <li>Bachelor's in Linguistics, Federal University of Minas Gerais, 2013</li>
-            </ul>
+            <div class="container">
+                <h2>Education</h2>
+                <ul class="timeline">
+                    <li>
+                        <h3>Doctorate in Linguistics</h3>
+                        <p>Université du Québec à Montréal, 2016 - 2023</p>
+                        <p>Coursework completed</p>
+                    </li>
+                    <li>
+                        <h3>Master's in Linguistics</h3>
+                        <p>Federal University of Minas Gerais, 2016</p>
+                    </li>
+                    <li>
+                        <h3>Bachelor's in Linguistics</h3>
+                        <p>Federal University of Minas Gerais, 2013</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section id="experience" class="content-section">
-            <h2>Professional Experience</h2>
-            <ul>
-                <li>Course Lecturer, Bishop's University, Greek & Latin Terminology for Medicine & Life Sciences (CLA170), 2024</li>
-                <li>Professor, Cégep de Lévis, English General Training, Portuguese I, II, III, since 2023</li>
-                <li>Course Lecturer, McGill University, Introductory Latin 1 (CLAS 210), Fall 2022</li>
-                <li>Teaching Assistant and Grader, UQAM, various courses, 2020-2022</li>
-            </ul>
+            <div class="container">
+                <h2>Professional Experience</h2>
+                <div class="experience-grid">
+                    <div class="experience-item">
+                        <h3>Course Lecturer</h3>
+                        <p>Bishop's University, 2024</p>
+                        <p>Greek & Latin Terminology for Medicine & Life Sciences (CLA170)</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Professor</h3>
+                        <p>Cégep de Lévis, since 2023</p>
+                        <p>English General Training, Portuguese I, II, III</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Course Lecturer</h3>
+                        <p>McGill University, Fall 2022</p>
+                        <p>Introductory Latin 1 (CLAS 210)</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Teaching Assistant and Grader</h3>
+                        <p>UQAM, 2020-2022</p>
+                        <p>Various courses</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <div class="social-media">
-            <a href="https://twitter.com/johnasci" target="_blank" aria-label="Twitter">Twitter</a>
-            <a href="https://instagram.com/johnlinguista" target="_blank" aria-label="Instagram">Instagram</a>
-            <a href="https://linkedin.com/in/johnascimento/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+        <div class="container">
+            <div class="social-media">
+                <a href="https://twitter.com/johnasci" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/johnlinguista" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/johnascimento/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2024 Johnnatan Nascimento. All rights reserved.</p>
         </div>
     </footer>
 
