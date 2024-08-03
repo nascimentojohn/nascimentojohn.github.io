@@ -3,92 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johnnatan Nascimento</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        header {
-            background: #ffffff;
-            color: #4169E1;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #4169E1 3px solid;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            background: #ffffff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            padding: 0;
-            list-style-type: none;
-        }
-        nav li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav a {
-            color: #333;
-            text-decoration: none;
-        }
-        .content {
-            background: #ffffff;
-            padding: 20px;
-            margin-top: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .profile-img {
-            width: 200px;
-            border-radius: 50%;
-            float: left;
-            margin-right: 20px;
-        }
-    </style>
+    <title>Johnnatan Nascimento - Linguist and Educator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Johnnatan Nascimento</h1>
-        </div>
+        <h1>Johnnatan Nascimento</h1>
+        <nav>
+            <a href="#" onclick="showSection('home')">Home</a>
+            <a href="#" onclick="showSection('about')">About Me</a>
+            <a href="#" onclick="showSection('education')">Education</a>
+            <a href="#" onclick="showSection('experience')">Professional Experience</a>
+        </nav>
     </header>
 
-    <nav>
-        <div class="container">
+    <main class="container">
+        <section id="home" class="content-section active-section">
+            <img src="profilephoto.jpg" alt="Johnnatan Nascimento" class="profile-photo">
+            <div class="about-text">
+                <h2>Hi! I'm Johnnatan Nascimento</h2>
+                <p>A linguist and educator with a passion for historical linguistics and language teaching.</p>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>I'm a linguist and educator with a Master's degree in Linguistics from the Federal University of Minas Gerais, Brazil. Currently, I'm completing my PhD in Linguistics at the Université du Québec à Montréal, Canada.</p>
+            <p>My teaching experience includes Latin, Ancient Greek, Sanskrit, fundamental linguistics courses, and comparative/historical linguistics at institutions such as McGill University, Bishop's University, and Cégep de Lévis.</p>
+            <p>My research focuses on historical linguistics, specifically comparative Indo-European languages, verbal morphology, grammaticalization, and nanosyntax. I use technological tools to improve learning outcomes and work to make linguistics accessible to broader audiences.</p>
+        </section>
+
+        <section id="education" class="content-section">
+            <h2>Education</h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Professional Experience</a></li>
+                <li>Doctorate in Linguistics (coursework completed), Université du Québec à Montréal, 2016 - 2023</li>
+                <li>Master's in Linguistics, Federal University of Minas Gerais, 2016</li>
+                <li>Bachelor's in Linguistics, Federal University of Minas Gerais, 2013</li>
             </ul>
-        </div>
-    </nav>
+        </section>
 
-    <div class="container">
-        <div class="content">
-            <img src="/api/placeholder/200/200" alt="Johnnatan Nascimento" class="profile-img">
-            <p>Hi! I'm Johnnatan Nascimento, a linguist and educator with a Master's degree in Linguistics from the Federal University of Minas Gerais, Brazil. I am currently completing my PhD in Linguistics at the Université du Québec à Montréal. I have taught at the Classics Department of McGill University, Bishop's University, and the Languages Department of Cégep de Lévis. My teaching experience includes Latin, Ancient Greek, Sanskrit, fundamental linguistics courses, and comparative/historical linguistics.</p>
-            <p>My research focuses on historical linguistics, specifically comparative Indo-European languages, verbal morphology, grammaticalization, and nanosyntax. I use technological tools to improve learning outcomes. Beyond academia, I work to make linguistics accessible to broader audiences.</p>
-        </div>
-    </div>
+        <section id="experience" class="content-section">
+            <h2>Professional Experience</h2>
+            <ul>
+                <li>Course Lecturer, Bishop's University, Greek & Latin Terminology for Medicine & Life Sciences (CLA170), 2024</li>
+                <li>Professor, Cégep de Lévis, English General Training, Portuguese I, II, III, since 2023</li>
+                <li>Course Lecturer, McGill University, Introductory Latin 1 (CLAS 210), Fall 2022</li>
+                <li>Teaching Assistant and Grader, UQAM, various courses, 2020-2022</li>
+            </ul>
+        </section>
+    </main>
 
-    <script>
-        // You can add any JavaScript functionality here if needed
-    </script>
+    <footer>
+        <div class="social-media">
+            <a href="https://twitter.com/johnasci" target="_blank" aria-label="Twitter">Twitter</a>
+            <a href="https://instagram.com/johnlinguista" target="_blank" aria-label="Instagram">Instagram</a>
+            <a href="https://linkedin.com/in/johnascimento/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
