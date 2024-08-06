@@ -89,23 +89,6 @@ main {
     margin-bottom: 10px;
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    margin-top: 20px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.cta-button:hover {
-    background-color: var(--primary-color);
-    color: var(--light-text);
-}
-
 footer {
     background-color: var(--primary-color);
     color: var(--light-text);
