@@ -1,14 +1,14 @@
-function showSection(sectionId) {
-    // Hide all sections
-    const sections = document.querySelectorAll('.content-section');
-    sections.forEach(section => section.classList.remove('active-section'));
+// Script.js
 
-    // Show the selected section
-    const activeSection = document.getElementById(sectionId);
-    activeSection.classList.add('active-section');
-}
+console.log("Website loaded successfully");
 
-// Show the "Home" section by default when the page loads
-document.addEventListener('DOMContentLoaded', () => {
-    showSection('home');
+// Add smooth scrolling to anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
